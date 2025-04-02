@@ -1,0 +1,199 @@
+.mainHome {
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--color6);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    animation: gradientMove 4s infinite linear;
+  }
+  button:hover {
+    background: linear-gradient(
+      45deg,
+      var(--color5),
+      var(--color3),
+      var(--color5)
+    );
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+.bannerHome {
+  background-color: var(--color4);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7%;
+}
+.bannerImg {
+  max-height: 400px;
+}
+.introContainer {
+  padding: 7% 20%;
+  background-color: var(--color2);
+  h2 {
+    color: var(--color6);
+    text-align: center;
+    font-size: 40px;
+    span {
+      color: var(--color5);
+      text-shadow: -1px -1px 0 var(--color6), 1px -1px 0 var(--color6),
+        -1px 1px 0 var(--color6), 1px 1px 0 var(--color6);
+    }
+  }
+  p {
+    font-size: 20px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .buttonContainer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    button {
+      background: linear-gradient(
+        45deg,
+        var(--color3),
+        var(--color5),
+        var(--color3)
+      );
+    }
+    button:hover {
+      background: linear-gradient(
+        45deg,
+        var(--color4),
+        var(--color1),
+        var(--color4)
+      );
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.aboutContainer {
+  padding: 7% 10%;
+  background-color: var(--color5);
+  display: flex;
+  gap: 40px;
+  .aboutImg {
+    width: 300px;
+    border-radius: 70%;
+    object-fit: contain;
+  }
+  div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      color: var(--color6);
+      text-align: left;
+      font-size: 40px;
+    }
+    p {
+      margin: 30px 0;
+      font-size: 20px;
+      color: var(--color6);
+    }
+    button {
+      width: 200px;
+      background: linear-gradient(
+        45deg,
+        var(--color4),
+        var(--color1),
+        var(--color4)
+      );
+    }
+    button:hover {
+      background: linear-gradient(
+        45deg,
+        var(--color3),
+        var(--color5),
+        var(--color3)
+      );
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.skillsContainer {
+  padding: 7% 10%;
+  background-color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    color: var(--color6);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.projectsContainer{
+    padding: 7% 10%;
+    background-color: var(--color3);
+    h2 {
+        color: var(--color6);
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+}
+
+@media (max-width: 600px) {
+    .introContainer {
+      padding: 10%;
+      h2{
+        font-size: 2.2rem;
+      }
+    }
+
+    .aboutContainer{
+        padding: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+        div{
+            align-items: center;
+            justify-content: center;
+            h2{
+                font-size: 2.2rem;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    .skillsContainer{
+        padding: 10%;
+        h2{
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+  }

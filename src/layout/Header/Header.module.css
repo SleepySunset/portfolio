@@ -1,0 +1,49 @@
+.header{
+    padding: 1.4% 10%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    max-width: 100px;
+}
+.navMenu{
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    justify-content: end;
+    
+}
+.navOpt{
+    color: var(--color6);
+    font-size: 1.3rem;
+    a:visited{
+        color: inherit;
+      }   
+    
+}
+.navOpt:hover{
+    color: var(--color8);
+    text-shadow: 2px 2px 10px var(--color5);
+}
+
+@media (max-width: 600px) {
+    .header{
+        padding: 15px 6px;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .navMenu{
+        width: 100%;
+        justify-content: center;
+    }
+    .navOpt{
+        font-size: 1rem;
+    }
+}
