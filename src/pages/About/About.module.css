@@ -1,0 +1,130 @@
+.mainContainer {
+  color: var(--color6);
+  h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--color6);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    animation: gradientMove 4s infinite linear;
+    background: linear-gradient(
+        45deg,
+        var(--color4),
+        var(--color1),
+        var(--color4)
+      );
+  }
+  button:hover {
+    background: linear-gradient(
+      45deg,
+      var(--color5),
+      var(--color3),
+      var(--color5)
+    );
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+}
+.backContainer {
+  padding: 3% 10% 0 10%;
+  background-color: var(--color2);
+  button:hover{
+    cursor: pointer;
+}
+}
+.backContainer:hover{
+    cursor: pointer; 
+}
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  padding: 1% 10% 10% 10%;
+  background-color: var(--color2);
+  gap: 5%;
+
+  img {
+    width: 40%;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 6px double var(--color5);
+    padding: 6px;
+    background: var(--color6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2{
+      color: var(--color5);
+      text-shadow: -1px -1px 0 var(--color6), 1px -1px 0 var(--color6),
+        -1px 1px 0 var(--color6), 1px 1px 0 var(--color6);
+        margin-top: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+.jobContainer {
+  padding: 3% 15%;
+  background-color: var(--color5);
+  
+}
+.studyContainer {
+  padding: 3% 15%;
+  background-color: var(--color9);
+}
+.techContainer {
+  padding: 7% 10%;
+  background-color: var(--color1);
+  h2 {
+    text-align: center;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+    .aboutContainer{
+        flex-direction: column;
+        img{
+            width: 70%;
+            margin-top: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .jobContainer .studyContainer{
+        padding: 2% 10%;
+    }
+    .techContainer{
+        padding: 3%;
+    }
+
+}
+

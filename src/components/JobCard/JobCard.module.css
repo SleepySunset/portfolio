@@ -1,0 +1,35 @@
+.cardContainer{
+    display: flex;
+    gap: 6%;
+    margin: 50px 0;
+    padding: 20px 30px;
+    border-left: 2px solid var(--color6);
+    
+    
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 35%;
+    gap: 10px;
+    h3{
+        font-size: 1.4rem;
+
+    }
+    
+}
+.rightContainer{
+    min-width: 59%;
+    font-size: 1.2rem;
+   
+}
+
+@media (max-width: 800px){
+    .cardContainer{
+        flex-direction: column;
+    }
+    .rightContainer{
+        margin-top: 25px;
+    }
+
+}
