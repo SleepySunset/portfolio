@@ -1,0 +1,35 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About Me",
+      "projects": "Projects"
+    },
+    "home": {
+      "introTitle1": "My name is ",
+      "introTitle2": "Luisa García",
+      "introTitle3": " and I am a web developer",
+      "introText1": "This is my portfolio, a space designed to share a bit of my work, my projects, my style, my skills, and above all, my great passion for web development. I have over 1 year of experience in React and I'm always learning new skills and technologies.",
+      "introText2": "Hope you enjoy it!",
+      "introButton1": "See Projects",
+      "introButton2": "Download CV",
+      "aboutTitle": "About Me",
+      "aboutText": "I love coding! There's nothing better than the satisfaction of solving a problem. I'm a natural leader and working in a team is something I truly enjoy. I believe words are powerful tools, and empathy and respect should be the foundation of all relationships.",
+      "aboutButton": "More About Me",
+      "skillsTitle": "My Skills",
+      "projectsTitle": "Some of My Projects"
+    },
+    "about": {
+      "backButton": "Back",
+      "introTitle": "About Me",
+      "introText1": "My first contact with programming was at the age of 12, watching my older brother —a systems engineering student— spend entire nights writing code. His dedication and passion for learning taught me that in this world, you always have to go one step further. He has been, and still is, a great inspiration to me.",
+      "introText2": "At 15, I coded for the first time in an elective subject at school. Although the challenges were simple, I discovered the gratifying satisfaction of solving logic problems with just a few lines of code.",
+      "introText3": "Today, I deeply enjoy creating solutions that combine functionality and beauty. I love that my job is all about solving problems with style.",
+      "jobsTitle": "Work Experience",
+      "studiesTitle": "Education",
+      "skillsTitle": "My Skills"
+    },
+    "projects": {
+      "title": "Some of My Projects"
+    }
+  }
+  

@@ -5,9 +5,18 @@ import { skills } from "../../utils/skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Home = () => {
   const navigate = useNavigate();
+  const { language } = useLanguage();
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   const handleShowProjects = () => {
     navigate("/projects");
@@ -39,20 +48,16 @@ const Home = () => {
         </div>
         <div className={styles.introContainer}>
           <h2>
-            Mi nombre es <span>Luisa García</span> y soy desarrolladora web
+            {t("home.introTitle1")}
+            <span>{t("home.introTitle2")}</span>
+            {t("home.introTitle3")}
           </h2>
-          <p>
-            Este es mi portafolio, un espacio pensado para compartir un poco de
-            mi trabajo, mis proyectos, mi estilo, mis habilidades y sobre todo
-            mi gran pasión por el desarrollo web. Cuento con +1 de experiencia
-            en React y siempre estoy aprendiendo habilidades y tecnologías
-            nuevas.
-          </p>
-          <p>¡Espero les guste!</p>
+          <p>{t("home.introText1")}</p>
+          <p>{t("home.introText2")}</p>
           <div className={styles.buttonContainer}>
-            <button onClick={handleShowProjects}>Ver proyectos</button>
+            <button onClick={handleShowProjects}>{t("home.introButton1")}</button>
             <button onClick={handleCVDownload}>
-              <FontAwesomeIcon icon={faDownload} /> Descargar CV
+              <FontAwesomeIcon icon={faDownload} /> {t("home.introButton2")}
             </button>
           </div>
         </div>
@@ -63,31 +68,23 @@ const Home = () => {
             alt="Foto de Luisa García"
           />
           <div>
-            <h2>Acerca de mí</h2>
+            <h2>{t("home.aboutTitle")}</h2>
             <p>
-              ¡Me encanta programar! No hay nada mejor que la satisfacción de
-              resolver un problema. Soy una líder nata y trabajar en equipo se
-              me da súper bien. Pienso que las palabras son herramientas
-              increíbles y que la empatía y el respeto deben ser la base de
-              todas las relaciones.
+            {t("home.aboutText")}
             </p>
-            <button onClick={handleShowAboutMe  }>Más acerca de mí</button>
+            <button onClick={handleShowAboutMe}>{t("home.aboutButton")}</button>
           </div>
         </div>
         <div className={styles.skillsContainer}>
-          <h2>Mis habilidades</h2>
+          <h2>{t("home.skillsTitle")}</h2>
           <div>
             {skills.map((skill, index) => (
-              <SkillCard
-                key={index}
-                icon={skill.icon}
-                title={skill.title}
-              />
+              <SkillCard key={index} icon={skill.icon} title={skill.title} />
             ))}
           </div>
         </div>
         <div className={styles.projectsContainer}>
-          <h2>Algunos de mis proyectos</h2>
+          <h2>{t("home.projectsTitle")}</h2>
           <div>
             <div></div>
             <div></div>

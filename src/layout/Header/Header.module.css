@@ -48,6 +48,38 @@
   }
 }
 
+
+.langToggle {
+  display: flex;
+  align-items: center;
+}
+
+.navMenu button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.navMenu button img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.navMenu button:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.navMenu button.langActive img {
+  filter: grayscale(0%) drop-shadow(0 0 5px var(--color3));
+  transform: scale(1.2);
+}
+
+
 @keyframes two-step-swing {
   0% {
     transform: translateX(-12px) rotateZ(-10deg);
@@ -71,11 +103,9 @@
 }
 .navOpt:hover {
   color: var(--color8);
-  text-shadow: 2px 2px 10px var(--color5);
 }
 .navActive {
   color: var(--color8);
-  text-shadow: 2px 2px 10px var(--color5);
   font-size: 1.3rem;
   a:visited {
     color: inherit;

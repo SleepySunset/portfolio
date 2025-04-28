@@ -1,0 +1,34 @@
+{
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "projects": "Proyectos"
+  },
+  "home": {
+    "introTitle1": "Mi nombre es ",
+    "introTitle2": "Luisa García",
+    "introTitle3": " y soy desarrolladora web",
+    "introText1": "Este es mi portafolio, un espacio pensado para compartir un poco de mi trabajo, mis proyectos, mi estilo, mis habilidades y sobre todo mi gran pasión por el desarrollo web. Cuento con +1 año de experiencia en React y siempre estoy aprendiendo habilidades y tecnologías nuevas.",
+    "introText2": "¡Espero les guste!",
+    "introButton1": "Ver Proyectos",
+    "introButton2": "Descargar CV",
+    "aboutTitle": "Sobre mí",
+    "aboutText": "¡Me encanta programar! No hay nada mejor que la satisfacción de resolver un problema. Soy una líder nata y trabajar en equipo se me da súper bien. Pienso que las palabras son herramientas increíbles y que la empatía y el respeto deben ser la base de todas las relaciones.",
+    "aboutButton": "Más sobre mí",
+    "skillsTitle": "Mis habilidades",
+    "projectsTitle": "Algunos de mis proyectos"
+  },
+  "about": {
+    "backButton": "Volver",
+    "introTitle": "Sobre mí",
+    "introText1": "Mi primer contacto con la programación fue a los 12 años, viendo a mi hermano mayor —estudiante de ingeniería de sistemas— pasar noches enteras escribiendo código. Su dedicación y pasión por aprender me enseñaron que en este mundo siempre hay que ir un paso más allá. Él ha sido, y sigue siendo, una gran inspiración para mí.",
+    "introText2": "A los 15 programé por primera vez en una materia electiva del colegio. Aunque los retos eran simples, descubrí la gratificante satisfacción de resolver problemas lógicos con solo unas líneas de código.",
+    "introText3": "A día de hoy disfruto profundamente de crear soluciones que combinan funcionalidad y belleza. Me encanta que mi trabajo consista en resolver problemas con con estilo.",
+    "jobsTitle": "Experiencia Laboral",
+    "studiesTitle": "Estudios",
+    "skillsTitle": "Mis habilidades"
+  },
+  "projects": {
+    "title": "Algunos de mis proyectos"
+  }
+}
