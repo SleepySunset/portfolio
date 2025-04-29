@@ -26,13 +26,24 @@ const Home = () => {
   };
 
   const handleCVDownload = () => {
-    const pdfUrl = "/documents/CVLuisaGarcia.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.setAttribute("download", "CVLuisaGarcia.pdf");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    if (language == "es") {
+      const pdfUrl = "/documents/CVEspanol.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.setAttribute("download", "CVEspanol.pdf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+    if (language == "en") {
+      const pdfUrl = "/documents/CVEnglish.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.setAttribute("download", "CVEnglish.pdf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (

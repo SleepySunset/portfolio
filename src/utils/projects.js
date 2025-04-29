@@ -48,6 +48,6 @@ export const projectsEN = [
     link: "https://masiv-comic-test.vercel.app",
     description:
       "This project is a comic viewer that connects to a constantly updating comic API. When users open the application, they are shown the latest published comic by default, and they can also browse backwards, move forward, or jump to a random comic. Since the API isn’t public, a major challenge was implementing a custom middleware to handle CORS errors and ensure smooth communication between the frontend and backend.",
-    tecnologies: "React, Node, Express, SASS y Vercel.",  
+    tecnologies: "React, Node, Express, SASS & Vercel.",  
   },
 ];

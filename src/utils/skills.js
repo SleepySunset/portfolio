@@ -1,5 +1,5 @@
-import { faJs, faReact, faJava, faGit, faNode } from "@fortawesome/free-brands-svg-icons";
-import { faFileCode, faLanguage, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import { faJs, faReact, faGit, faNode } from "@fortawesome/free-brands-svg-icons";
+import { faFileCode, faCircleCheck, faHandshake } from "@fortawesome/free-solid-svg-icons";
 
 
 export const skills = [
@@ -7,8 +7,8 @@ export const skills = [
   { icon: faReact, title: "React" },
   { icon: faFileCode, title: "HTML & CSS" },
   { icon: faNode, title: "Nodejs" },
-  { icon: faJava, title: "Java" },
-  { icon: faLanguage, title: "Inglés" },
-  { icon: faHandshake, title: "Soft Skills" },
+  { icon: faCircleCheck, title: "Testing" },
   { icon: faGit, title: "Git" },
+  { icon: faHandshake, title: "Soft Skills" },
+  
 ];
