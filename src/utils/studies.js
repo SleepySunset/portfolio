@@ -7,7 +7,7 @@ export const studiesES = [
       "Introducción a lógica de programación, bases sólidas para el desarrollo web y herramientas de versionado de código.",
   },
   {
-    title: "Certified Tech Developer",
+    title: "Professional Developer",
     school: "Digital House",
     dates: "2023 - 2025",
     description:
@@ -31,7 +31,7 @@ export const studiesEN = [
       "Introduction to programming logic, solid foundations for web development, and code versioning tools.",
   },
   {
-    title: "Certified Tech Developer",
+    title: "Professional Developer",
     school: "Digital House",
     dates: "2023 - 2025",
     description:

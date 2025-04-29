@@ -9,20 +9,15 @@ const Header = () => {
   const activeLink = location.pathname;
   const { language, changeLanguage } = useLanguage();
 
-
   return (
     <header className={styles.header}>
       <div className={styles.logoWrapper}>
-        <div className={styles.orbitContainer}>
-          <span className={styles.star}></span>
-          <span className={styles.star}></span>
-          <span className={styles.star}></span>
-          <img
-            src="./images/logo.webp"
-            alt="Logo"
-            className={styles.logoDefault}
-          />
-        </div>
+        <img
+          src="./images/logo.webp"
+          alt="Logo"
+          className={styles.logoDefault}
+        />
+
         <img
           src="./images/logoHover.webp"
           alt="Logo Hover"
@@ -55,13 +50,17 @@ const Header = () => {
         </Link>
         <button
           onClick={() => changeLanguage("en")}
-          className={language === "en" ? styles.langActive : styles.langInactive}
+          className={
+            language === "en" ? styles.langActive : styles.langInactive
+          }
         >
           <img src="/images/en.webp" alt="English" />
         </button>
         <button
           onClick={() => changeLanguage("es")}
-          className={language === "es" ? styles.langActive : styles.langInactive}
+          className={
+            language === "es" ? styles.langActive : styles.langInactive
+          }
         >
           <img src="/images/es.webp" alt="Español" />
         </button>

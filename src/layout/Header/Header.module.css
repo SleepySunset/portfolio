@@ -75,7 +75,7 @@
 }
 
 .navMenu button.langActive img {
-  filter: grayscale(0%) drop-shadow(0 0 5px var(--color3));
+  filter: grayscale(0%) drop-shadow(0 0 5px var(--color9));
   transform: scale(1.2);
 }
 
@@ -102,10 +102,10 @@
   }
 }
 .navOpt:hover {
-  color: var(--color8);
+  color: var(--color9);
 }
 .navActive {
-  color: var(--color8);
+  color: var(--color9);
   font-size: 1.3rem;
   a:visited {
     color: inherit;

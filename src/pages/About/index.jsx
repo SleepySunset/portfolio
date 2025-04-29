@@ -1,4 +1,3 @@
-import Header from "../../layout/Header";
 import { experienceEN, experienceES } from "../../utils/experience";
 import { studiesEN, studiesES } from "../../utils/studies";
 import { skills } from "../../utils/skills";
@@ -31,15 +30,14 @@ const About = () => {
   language === "es" ? (experience = experienceES) : (experience = experienceEN);
   language === "es" ? (studies = studiesES) : (studies = studiesEN);
   return (
-    <>
-      <Header></Header>
-      <main className={styles.mainContainer}>
-        <div className={styles.backContainer}>
-          <button onClick={handleBackButton}>
-            <FontAwesomeIcon icon={faArrowLeft} /> {t("about.backButton")}
-          </button>
-        </div>
-        <div className={styles.aboutContainer}>
+    <main className={styles.mainContainer}>
+      <div className={styles.backContainer}>
+        <button onClick={handleBackButton}>
+          <FontAwesomeIcon icon={faArrowLeft} /> {t("about.backButton")}
+        </button>
+      </div>
+      <div className={styles.aboutContainer}>
+        <div>
           <img src="./images/Luisa.webp" />
           <div className={styles.aboutTextContainer}>
             <h2>{t("about.introTitle")}</h2>
@@ -48,8 +46,10 @@ const About = () => {
             <p>{t("about.introText3")}</p>
           </div>
         </div>
+      </div>
 
-        <div className={styles.jobContainer}>
+      <div className={styles.jobContainer}>
+        <div>
           <h2>
             <FontAwesomeIcon icon={faBriefcase} /> {t("about.jobsTitle")}
           </h2>
@@ -65,7 +65,9 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={styles.studyContainer}>
+      </div>
+      <div className={styles.studyContainer}>
+        <div>
           <h2>
             <FontAwesomeIcon icon={faGraduationCap} /> {t("about.studiesTitle")}
           </h2>
@@ -79,7 +81,9 @@ const About = () => {
             />
           ))}
         </div>
-        <div className={styles.techContainer}>
+      </div>
+      <div className={styles.techContainer}>
+        <div>
           <h2>{t("about.skillsTitle")}</h2>
           <div>
             {skills.map((skill, index) => (
@@ -87,8 +91,8 @@ const About = () => {
             ))}
           </div>
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   );
 };
 

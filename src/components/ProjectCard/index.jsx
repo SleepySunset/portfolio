@@ -1,6 +1,15 @@
 import styles from "./ProjectCard.module.css";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "../../context/LanguageContext";
+import { useEffect } from "react";
 
 const ProjectCard = ({ title, banner, link, description, tecnologies }) => {
+  const { language } = useLanguage();
+  const { t, i18n } = useTranslation("global");
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
   return (
     <div className={styles.cardContainer}>
       <h2>{title}</h2>
@@ -10,9 +19,9 @@ const ProjectCard = ({ title, banner, link, description, tecnologies }) => {
         </a>
       </div>
 
-      <h3>Acerca del proyecto</h3>
+      <h3>{t("projects.about")}</h3>
       <p>{description}</p>
-      <h3>Tecnologías usadas</h3>
+      <h3>{t("projects.technologies")}</h3>
       <p>{tecnologies}</p>
     </div>
   );

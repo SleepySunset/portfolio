@@ -29,6 +29,14 @@
     "skillsTitle": "Mis habilidades"
   },
   "projects": {
-    "title": "Algunos de mis proyectos"
+    "title": "Algunos de mis proyectos",
+    "about": "Sobre este proyecto",
+    "technologies": "Tecnologías"
+  },
+  "footer": {
+    "nav1": "Inicio",
+    "nav2": "Sobre mí",
+    "nav3": "Proyectos",
+    "copy": "© 2025 Luisa García. Todos los derechos reservados"
   }
 }

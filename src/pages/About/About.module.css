@@ -12,11 +12,11 @@
     position: relative;
     animation: gradientMove 4s infinite linear;
     background: linear-gradient(
-        45deg,
-        var(--color4),
-        var(--color1),
-        var(--color4)
-      );
+      45deg,
+      var(--color4),
+      var(--color1),
+      var(--color4)
+    );
   }
   button:hover {
     background: linear-gradient(
@@ -39,27 +39,32 @@
     100% {
       background-position: 0% 50%;
     }
-}
+  }
 }
 .backContainer {
   padding: 3% 10% 0 10%;
   background-color: var(--color2);
-  button:hover{
+  button:hover {
     cursor: pointer;
+  }
 }
-}
-.backContainer:hover{
-    cursor: pointer; 
+.backContainer:hover {
+  cursor: pointer;
 }
 .aboutContainer {
   display: flex;
-  align-items: center;
   padding: 1% 10% 10% 10%;
   background-color: var(--color2);
-  gap: 5%;
-
+  justify-content: center;
+  div {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
   img {
     width: 40%;
+    max-width: 400px;
     object-fit: contain;
     border-radius: 50%;
     border: 6px double var(--color5);
@@ -71,11 +76,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    h2{
+    h2 {
       color: var(--color5);
       text-shadow: -1px -1px 0 var(--color6), 1px -1px 0 var(--color6),
         -1px 1px 0 var(--color6), 1px 1px 0 var(--color6);
-        margin-top: 0;
+      margin-top: 0;
     }
     p {
       font-size: 1.2rem;
@@ -84,47 +89,65 @@
   }
 }
 .jobContainer {
+  display: flex;
+  justify-content: center;
   padding: 3% 15%;
   background-color: var(--color5);
-  
+  div{
+    max-width: 1000px;
+  }
+ 
 }
 .studyContainer {
+  display: flex;
+  justify-content: center;
   padding: 3% 15%;
-  background-color: var(--color9);
+  background-color: var(--color1);
+  div{
+    max-width: 1000px;
+  }
 }
 .techContainer {
+  display: flex;
+  justify-content: center;
   padding: 7% 10%;
-  background-color: var(--color1);
+  background-color: var(--color3);
   h2 {
+    color: var(--color10);
+    text-shadow: -1px -1px 0 var(--color6), 1px -1px 0 var(--color6),
+      -1px 1px 0 var(--color6), 1px 1px 0 var(--color6);
     text-align: center;
   }
   div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
   }
 }
 
 @media (max-width: 1000px) {
-    .aboutContainer{
-        flex-direction: column;
-        img{
-            width: 70%;
-            margin-top: 20px;
-        }
-        h2{
-            text-align: center;
-        }
+  .aboutContainer {
+    flex-direction: column;
+    div{
+      flex-direction: column;
+      img {
+        width: 70%;
+        margin-top: 20px;
+      }
+      h2 {
+        text-align: center;
+      }
     }
+    
+  }
 }
 
-@media (max-width: 800px){
-    .jobContainer .studyContainer{
-        padding: 2% 10%;
-    }
-    .techContainer{
-        padding: 3%;
-    }
-
+@media (max-width: 800px) {
+  .jobContainer .studyContainer {
+    padding: 2% 10%;
+  }
+  .techContainer {
+    padding: 3%;
+  }
 }
-
